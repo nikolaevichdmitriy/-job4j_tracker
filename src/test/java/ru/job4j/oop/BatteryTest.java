@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
+
 class BatteryTest {
 
     @Test
@@ -32,4 +33,4 @@ class BatteryTest {
         int expected = 95;
         assertThat(another.about()).isEqualTo("My charge: " + expected + "%");
     }
-    }
+}
