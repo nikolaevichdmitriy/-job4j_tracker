@@ -12,8 +12,7 @@ public class Calculator {
     }
 
     public int sumAllOperation(int x) {
-        this.x = x;
-        return sum(2) + minus(4) + divide(1) + multiply(9);
+        return sum(x) + minus(x) + divide(x) + multiply(x);
     }
 
     public static int minus(int z) {
@@ -26,7 +25,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        int amount = calculator.sumAllOperation(24);
+        int amount = calculator.sumAllOperation(x);
         System.out.println(amount);
         System.out.println(minus(3));
         int result = calculator.divide(7);
