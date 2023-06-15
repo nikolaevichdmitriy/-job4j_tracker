@@ -34,8 +34,7 @@ public class Triangle {
         double bc = second.distance(third);
         if (this.exist(ab, ac, bc)) {
             double p = semiPerimeter(ab, ac, bc);
-            double perimeter = Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
-            return perimeter;
+            return Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
         }
         return rsl;
     }
