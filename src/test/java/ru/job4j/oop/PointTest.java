@@ -33,4 +33,13 @@ public class PointTest {
         double out = Math.pow(new Point(5, 3).distance(new Point(2, 0)), 2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when01to00to00then1() {
+        int expected = 1;
+        Point c = new Point(0, 1, 0);
+        Point d = new Point(0, 0, 0);
+        double out = c.distance3d(d);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
