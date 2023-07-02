@@ -9,7 +9,7 @@ public class TrackerTest {
     @Test
     public void whenAddNewItemThenTrackerHasSameItem() {
         Tracker tracker = new Tracker();
-        Item item = new Item(12, "Mack");
+        Item item = new Item(12, "Mask");
         item.setName("test1");
         tracker.add(item);
         Item result = tracker.findById(item.getId());
