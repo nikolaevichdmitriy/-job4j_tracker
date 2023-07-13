@@ -25,7 +25,7 @@ public class Library {
         System.out.println("Добавьте цикл с выводом книг с именем" + "   " + bookFour.getName());
         for (int index = 0; index < books.length; index++) {
             Book book = books[index];
-            if (book.getName().equals("Clean code")) {
+            if ("Clean code".equals(book.getName())) {
                 System.out.println(String.format("[%d] %s - %s ", index, book.getName(), book.getNumber()));
             }
         }
