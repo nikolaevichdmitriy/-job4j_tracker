@@ -4,10 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Item {
-    @Override
-    public String toString() {
-        return "Item{" + "id=" + id + ", name='" + name + '\'' + ", created=" + created + '}';
-    }
 
     private int id;
     private String name;
@@ -45,5 +41,10 @@ public class Item {
 
     public void setCreated(LocalDateTime created) {
         this.created = created;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" + "id=" + id + ", name='" + name + '\'' + ", created=" + created + '}';
     }
 }
