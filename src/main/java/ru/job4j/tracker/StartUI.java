@@ -11,6 +11,16 @@ public class StartUI {
             int select = Integer.parseInt(scanner.nextLine());
             if (select == 0) {
                 System.out.println("=== Создание новой заявки ===");
+            } else if (select == 1) {
+                System.out.println("=== Вывод всех заявок ===");
+                Item[] items = tracker.findAll();
+                if (items.length > 0) {
+                    for (Item item : items) {
+                        System.out.println(item);
+                    }
+                }  else {
+                    System.out.println("Хранилище еще не содержит заявок");
+                }
                 System.out.print("Введите имя: ");
                 String name = scanner.nextLine();
                 Item item = new Item(name);
@@ -23,7 +33,9 @@ public class StartUI {
     }
 
     private void showMenu() {
-        String[] menu = {"Добавить новую заявку", "Показать все заявки", "Изменить заявку", "Удалить заявку", "Показать заявку по id", "Показать заявки по имени", "Завершить программу"};
+        String[] menu = {"Добавить новую заявку", "Показать все заявки",
+                "Изменить заявку", "Удалить заявку", "Показать заявку по id",
+                "Показать заявки по имени", "Завершить программу"};
         System.out.println("Меню:");
         for (int i = 0; i < menu.length; i++) {
             System.out.println(i + ". " + menu[i]);
