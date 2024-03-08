@@ -37,6 +37,6 @@ class StartUITest {
         String[] answers = {String.valueOf(item.getId())};
         StartUI.deleteItem(new MockInput(answers), tracker);
         Item deleted = tracker.findById(item.getId());
-        assertNull(deleted, "Заявка удалена успешно.");
+        assertThat(deleted).isNull();
     }
 }
