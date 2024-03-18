@@ -8,8 +8,8 @@ public class FindEl {
                 result = i;
                 break;
             }
-            if (value == null) {
-                throw new ElementNotFoundException();
+            if (result == -1) {
+                throw new ElementNotFoundException("Element not found in the array");
             }
         }
         return result;
@@ -17,7 +17,8 @@ public class FindEl {
 
     public static void main(String[] args) throws ElementNotFoundException {
         try {
-            indexOf(new String[]{"one"}, "one");
+          int index = indexOf(new String[]{"one"}, "one");
+            System.out.println("Element found at index: " + index);
         } catch (ElementNotFoundException e) {
             e.printStackTrace();
         }
