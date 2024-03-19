@@ -14,8 +14,10 @@ public class UserStore {
         if (user.getUsername().length() < 3) {
             throw new UserInvalidException("Username must be at least 3 characters long");
         }
+        if (!user.isValid()) {
+            throw new UserInvalidException(" User is not valid");
+        }
         return user.isValid();
-
     }
 
     public static void main(String[] args) throws UserNotFoundException {
