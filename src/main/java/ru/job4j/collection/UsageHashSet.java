@@ -7,6 +7,10 @@ public class UsageHashSet {
         HashSet<String> autos = new HashSet<>();
         System.out.println("Car brands:");
         autos.add(" Lada");
+        autos.add(" Lada");
+        autos.add(" BMW");
+        autos.add(" Volvo");
+        autos.add(" Toyota");
         autos.add(" BMW");
         autos.add(" Volvo");
         autos.add(" Toyota");
