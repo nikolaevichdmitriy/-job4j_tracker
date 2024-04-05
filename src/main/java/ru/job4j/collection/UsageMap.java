@@ -5,10 +5,11 @@ import java.util.HashMap;
 public class UsageMap {
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<>();
-        map.put("parsentey@yandex.ru", "Pet Arsentev");
-        map.put("parsenteb@yandex.ru", "Petya Arsentev");
-        map.put("parsenter@yandex.ru", "Petr Arsentev");
-        map.put("parsenten@yandex.ru", "Pepe Arsentev");
+        map.put("ivanov@yandex.ru", "Petr Ivanov");
+        map.put("parsent@yandex.ru", "Ivan Arsentev");
+        map.put("arshavin@yandex.ru", "Max Arshavin");
+        map.put("bistrov@yandex.ru", "Pep Bistrov");
+        map.put("bistrov@yandex.ru", "Pep Bistrov");
         for (String key : map.keySet()) {
             System.out.println("Key: " + key + ",Name: " + map.get(key));
         }
