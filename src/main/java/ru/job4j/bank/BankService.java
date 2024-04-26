@@ -24,14 +24,6 @@ public class BankService {
             if (!accounts.contains(account)) {
                 accounts.add(account);
             }
-            Account existingAccount = findByRequisite(passport, account.getRequisite());
-            if (existingAccount == null) {
-                getAccounts(user).add(account);
-            } else {
-                System.out.println("Счет с такими же реквизитами уже существует.");
-            }
-        } else {
-            System.out.println("Пользователь не найден.");
         }
     }
 
