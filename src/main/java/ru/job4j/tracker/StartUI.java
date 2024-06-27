@@ -15,7 +15,7 @@ public class StartUI {
             showMenu(actions);
             int select = input.askInt("Выбрать: ");
             if (select < 0 || select >= actions.length) {
-                out.println("Неверный ввод, вы можете выбрать: 0 .. " + (actions.length - 1));
+                output.println("Неверный ввод, вы можете выбрать: 0 .. " + (actions.length - 1));
                 continue;
             }
             UserAction action = actions[select];
@@ -32,15 +32,17 @@ public class StartUI {
 
     public static void main(String[] args) {
         Output output = new ConsoleOutput();
-        Input input = new ConsoleInput();
+        Input input = new ValidateInput();
         Tracker tracker = new Tracker();
-        UserAction[] actions = {new CreateAction(output),
-                                new FindAllAction(output),
-                                new ReplaceAction(output),
-                                new DeleteAction(output),
-                                 new FindByIdAction(output),
-                                new FindByNameAction(output),
-                                new ExitAction(output)};
-                                new StartUI(output).init(input, tracker, actions);
+        UserAction[] actions = {
+                new CreateAction(output),
+                new FindAllAction(output),
+                new ReplaceAction(output),
+                new DeleteAction(output),
+                new FindByIdAction(output),
+                new FindByNameAction(output),
+                new ExitAction(output)
+        };
+        new StartUI(output).init(input, tracker, actions);
     }
 }
