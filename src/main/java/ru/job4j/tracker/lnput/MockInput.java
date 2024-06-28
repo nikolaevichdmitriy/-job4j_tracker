@@ -1,4 +1,6 @@
-package ru.job4j.tracker;
+package ru.job4j.tracker.lnput;
+
+import ru.job4j.tracker.lnput.Input;
 
 public class MockInput implements Input {
     private String[] answers;
