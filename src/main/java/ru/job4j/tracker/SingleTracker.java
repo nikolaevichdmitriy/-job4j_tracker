@@ -23,6 +23,4 @@ public class SingleTracker {
     public Item findById(int id) {
         return null;
     }
-
-    /* Остальные методы из класса Tracker. */
 }
