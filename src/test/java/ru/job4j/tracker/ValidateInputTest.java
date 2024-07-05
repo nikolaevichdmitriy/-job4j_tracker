@@ -6,7 +6,6 @@ import ru.job4j.tracker.lnput.MockInput;
 import ru.job4j.tracker.lnput.ValidateInput;
 import ru.job4j.tracker.output.Output;
 import ru.job4j.tracker.output.StubOutput;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ValidateInputTest {
