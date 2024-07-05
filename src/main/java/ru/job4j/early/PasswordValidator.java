@@ -47,6 +47,7 @@ public class PasswordValidator {
             throw new IllegalArgumentException("Password should contain"
                     + " at least one figure");
         }
+
         if (!hasSpecial) {
             throw new IllegalArgumentException("Password should contain"
                     + "at least one special symbol");
