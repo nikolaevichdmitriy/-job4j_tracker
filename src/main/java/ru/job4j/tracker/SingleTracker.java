@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class SingleTracker {
 
     private static SingleTracker instance;
-
     private Tracker tracker = new Tracker();
 
     private SingleTracker() {
