@@ -15,7 +15,7 @@ public class AppleStore {
     public String getLastHappyCustomer() {
         String name = "";
         int number = 1;
-        for (int i = 0; i < queue.size(); ) {
+        for (int i = 0; i < queue.size();) {
             if (number == count) {
                 name = queue.element().name();
                 break;
@@ -30,7 +30,7 @@ public class AppleStore {
     public String getFirstUpsetCustomer() {
         String name = "";
         int number = 1;
-        for (int i = 0; i < queue.size(); ) {
+        for (int i = 0; i < queue.size();) {
             if (number > count) {
                 name = queue.element().name();
                 break;
